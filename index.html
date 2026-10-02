@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mijn Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over-mij">Over mij</a></li>
+                <li><a href="#projecten">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hallo, ik ben <span class="highlight">Jouw Naam</span></h1>
+                <p class="subtitle">Web Developer & Designer</p>
+                <p>Welkom op mijn portfolio website.</p>
+                <a href="#projecten" class="btn">Bekijk mijn werk</a>
+            </div>
+        </section>
+
+        <section id="over-mij" class="about">
+            <div class="container">
+                <h2>Over mij</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Ik ben een enthousiaste webdeveloper met een passie voor het bouwen van mooie en functionele websites.</p>
+                        <p>Mijn vaardigheden omvatten HTML, CSS en JavaScript.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Vaardigheden</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projecten" class="projects">
+            <div class="container">
+                <h2>Mijn Projecten</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.png" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project 1</h3>
+                            <p>Een korte beschrijving van het project.</p>
+                            <a href="#" class="btn-small">Bekijk project</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.png" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project 2</h3>
+                            <p>Een korte beschrijving van het project.</p>
+                            <a href="#" class="btn-small">Bekijk project</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project3.png" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project 3</h3>
+                            <p>Een korte beschrijving van het project.</p>
+                            <a href="#" class="btn-small">Bekijk project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Bericht</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Verstuur</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mijn Portfolio. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
