@@ -11,6 +11,28 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+document.querySelectorAll('[data-project-dialog]').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const dialog = document.getElementById(trigger.dataset.projectDialog);
+
+        if (dialog) {
+            dialog.showModal();
+        }
+    });
+});
+
+document.querySelectorAll('.project-dialog').forEach(dialog => {
+    dialog.querySelector('.project-dialog-close').addEventListener('click', () => {
+        dialog.close();
+    });
+
+    dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) {
+            dialog.close();
+        }
+    });
+});
+
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', (e) => {

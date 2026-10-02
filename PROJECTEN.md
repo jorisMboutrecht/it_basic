@@ -36,10 +36,10 @@ De bezoeker kan in één oogopslag zien waar joris van der mispel aan werkt en z
 Voorlopig **geen**. Alles past in de drie bestaande bestanden. Pas als de projecten later uit een JSON- of PHP-bestand moeten komen, is er een databestand nodig.
 
 ## Klaar wanneer
-- [ ] Elke projectkaart heeft een werkende "Lees meer"-knop
-- [ ] De popup opent de juiste projectgegevens en sluit op alle drie manieren
+- [x] Elke projectkaart heeft een werkende "Lees meer"-knop
+- [x] De popup opent de juiste projectgegevens en sluit op alle drie manieren
 - [ ] Beide links per project werken (geen `#` meer)
 - [ ] De projectensectie bevat geen enkele `href="#"` of ontbrekende afbeelding meer
 - [ ] Onder 768px staan de kaarten in één kolom en past de popup op het scherm
-- [ ] Menu, contactformulier en scroll-animaties werken nog steeds
+- [x] Menu, contactformulier en scroll-animaties werken nog steeds
 - [ ] Projectgegevens ingevuld: titel, beschrijving, technieken, demo-URL, GitHub-URL

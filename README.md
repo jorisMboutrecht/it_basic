@@ -19,6 +19,7 @@ Een eenvoudige persoonlijke portfoliowebsite gebouwd met HTML, CSS en JavaScript
 - Navigatiemenu met hamburger-menu op mobiel
 - Secties: Home, Over mij, Projecten, Contact
 - Contactformulier
+- Projectenpagina met detailpopups (screenshots, technieken en links naar demo en GitHub)
 - Scroll-animaties
 - Een website over joris van der mispel
 - ik vindt programeren in php intressand

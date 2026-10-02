@@ -64,9 +64,14 @@
                             <img src="images/project1.png" alt="Project 1">
                         </div>
                         <div class="project-info">
-                            <h3>Project 1</h3>
-                            <p>Een korte beschrijving van het project.</p>
-                            <a href="#" class="btn-small">Bekijk project</a>
+                            <h3>Mijn portfolio</h3>
+                            <p>Portfolio website gemaakt met AI.</p>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <button type="button" class="btn-small" data-project-dialog="project-dialog-1" aria-haspopup="dialog">Lees meer</button>
                         </div>
                     </article>
                     <article class="project-card">
@@ -74,9 +79,12 @@
                             <img src="images/project2.png" alt="Project 2">
                         </div>
                         <div class="project-info">
-                            <h3>Project 2</h3>
-                            <p>Een korte beschrijving van het project.</p>
-                            <a href="#" class="btn-small">Bekijk project</a>
+                            <h3>PythonPeriode 1</h3>
+                            <p>Python-opdrachten uit periode 1.</p>
+                            <ul class="project-tags">
+                                <li>Python</li>
+                            </ul>
+                            <button type="button" class="btn-small" data-project-dialog="project-dialog-2" aria-haspopup="dialog">Lees meer</button>
                         </div>
                     </article>
                     <article class="project-card">
@@ -86,12 +94,65 @@
                         <div class="project-info">
                             <h3>Project 3</h3>
                             <p>Een korte beschrijving van het project.</p>
-                            <a href="#" class="btn-small">Bekijk project</a>
+                            <ul class="project-tags">
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <button type="button" class="btn-small" data-project-dialog="project-dialog-3" aria-haspopup="dialog">Lees meer</button>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+
+        <dialog id="project-dialog-1" class="project-dialog" aria-labelledby="project-dialog-1-title">
+            <div class="project-dialog-body">
+                <button type="button" class="project-dialog-close" aria-label="Venster sluiten">&times;</button>
+                <img class="project-dialog-image" src="images/project1.png" alt="Screenshot van project 1">
+                <h3 id="project-dialog-1-title">Mijn portfolio</h3>
+                <p>Deze website zelf. Ik heb de opmaak en de werking samen met AI opgebouwd en daarna zelf aangepast. De site heeft een responsieve opmaak, een hamburger-menu op mobiel, scroll-animaties en deze projectvensters.</p>
+                <ul class="project-tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <div class="project-dialog-links">
+                    <a href="https://github.com/jorisMboutrecht/it_basic" class="btn" target="_blank" rel="noopener noreferrer">Bekijk code op GitHub</a>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="project-dialog-2" class="project-dialog" aria-labelledby="project-dialog-2-title">
+            <div class="project-dialog-body">
+                <button type="button" class="project-dialog-close" aria-label="Venster sluiten">&times;</button>
+                <img class="project-dialog-image" src="images/project2.png" alt="Screenshot van project 2">
+                <h3 id="project-dialog-2-title">PythonPeriode 1</h3>
+                <p>Mijn Python-opdrachten uit periode 1. De opdrachten staan samen met mijn uitwerkingen in een GitHub-repository.</p>
+                <ul class="project-tags">
+                    <li>Python</li>
+                </ul>
+                <div class="project-dialog-links">
+                    <a href="https://github.com/jorisMboutrecht/PythonPeriode1/tree/main" class="btn" target="_blank" rel="noopener noreferrer">Bekijk code op GitHub</a>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="project-dialog-3" class="project-dialog" aria-labelledby="project-dialog-3-title">
+            <div class="project-dialog-body">
+                <button type="button" class="project-dialog-close" aria-label="Venster sluiten">&times;</button>
+                <img class="project-dialog-image" src="images/project3.png" alt="Screenshot van project 3">
+                <h3 id="project-dialog-3-title">Project 3</h3>
+                <p>Een uitgebreide beschrijving van dit project: wat het doet, voor wie het is bedoeld en waarom ik het heb gebouwd.</p>
+                <ul class="project-tags">
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ul>
+                <div class="project-dialog-links">
+                    <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Bekijk live demo</a>
+                    <a href="#" class="btn-small" target="_blank" rel="noopener noreferrer">Bekijk code op GitHub</a>
+                </div>
+            </div>
+        </dialog>
 
         <section id="contact" class="contact">
             <div class="container">
