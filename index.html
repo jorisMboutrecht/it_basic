@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+<!-- Portfoliowebsite: hoofdpagina met navigatie, secties en projectvensters -->
 <html lang="nl">
 <head>
+    <!-- Basismetadata en koppeling naar de stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mijn Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Vaste header met logo, navigatielinks en hamburger-menu voor mobiel -->
     <header>
         <nav>
             <div class="logo">Mijn Portfolio</div>
@@ -25,6 +28,7 @@
     </header>
 
     <main>
+        <!-- Hero-sectie: introductie met naam en call-to-action -->
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Hallo, ik ben <span class="highlight">Joris van der mispel</span></h1>
@@ -34,6 +38,7 @@
             </div>
         </section>
 
+        <!-- Over mij: korte beschrijving en vaardigheden -->
         <section id="over-mij" class="about">
             <div class="container">
                 <h2>Over mij</h2>
@@ -55,6 +60,7 @@
             </div>
         </section>
 
+        <!-- Projecten: overzicht van projectkaarten met een knop naar het bijbehorende venster -->
         <section id="projecten" class="projects">
             <div class="container">
                 <h2>Mijn Projecten</h2>
@@ -105,6 +111,7 @@
             </div>
         </section>
 
+        <!-- Dialoogvenster met details van project 1 -->
         <dialog id="project-dialog-1" class="project-dialog" aria-labelledby="project-dialog-1-title">
             <div class="project-dialog-body">
                 <button type="button" class="project-dialog-close" aria-label="Venster sluiten">&times;</button>
@@ -122,6 +129,7 @@
             </div>
         </dialog>
 
+        <!-- Dialoogvenster met details van project 2 -->
         <dialog id="project-dialog-2" class="project-dialog" aria-labelledby="project-dialog-2-title">
             <div class="project-dialog-body">
                 <button type="button" class="project-dialog-close" aria-label="Venster sluiten">&times;</button>
@@ -137,6 +145,7 @@
             </div>
         </dialog>
 
+        <!-- Dialoogvenster met details van project 3 -->
         <dialog id="project-dialog-3" class="project-dialog" aria-labelledby="project-dialog-3-title">
             <div class="project-dialog-body">
                 <button type="button" class="project-dialog-close" aria-label="Venster sluiten">&times;</button>
@@ -154,6 +163,7 @@
             </div>
         </dialog>
 
+        <!-- Contact: formulier voor naam, e-mail en bericht -->
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Contact</h2>
@@ -176,12 +186,14 @@
         </section>
     </main>
 
+    <!-- Footer met copyrightmelding -->
     <footer>
         <div class="container">
             <p>&copy; 2026 Mijn Portfolio. Alle rechten voorbehouden.</p>
         </div>
     </footer>
 
+    <!-- JavaScript voor menu, projectvensters, formulier en scroll-animaties -->
     <script src="js/script.js"></script>
 </body>
 </html>

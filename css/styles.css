@@ -1,9 +1,11 @@
+/* Reset: standaard marges en padding weghalen en box-sizing consistent maken */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Kleurenpalet als herbruikbare CSS-variabelen */
 :root {
     --primary-color: #2c3e50;
     --accent-color: #3498db;
@@ -12,6 +14,7 @@
     --white: #ffffff;
 }
 
+/* Algemene typografie en achtergrond van de pagina */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -19,12 +22,14 @@ body {
     background-color: var(--bg-color);
 }
 
+/* Centrale content-wrapper met maximale breedte */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Vaste header bovenaan de pagina */
 header {
     background-color: var(--primary-color);
     padding: 1rem 0;
@@ -34,6 +39,7 @@ header {
     z-index: 1000;
 }
 
+/* Navigatiebalk: logo links, links rechts */
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,12 +49,14 @@ nav {
     padding: 0 20px;
 }
 
+/* Logo-tekst in de navigatiebalk */
 .logo {
     color: var(--white);
     font-size: 1.5rem;
     font-weight: bold;
 }
 
+/* Horizontale lijst met navigatielinks */
 .nav-links {
     display: flex;
     list-style: none;
@@ -65,6 +73,7 @@ nav {
     color: var(--accent-color);
 }
 
+/* Hamburger-knop: standaard verborgen, alleen op mobiel zichtbaar */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -81,6 +90,7 @@ nav {
     transition: 0.3s;
 }
 
+/* Hero-sectie: volledige schermhoogte met gecentreerde inhoud */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -105,6 +115,7 @@ nav {
     margin-bottom: 2rem;
 }
 
+/* Primaire knopstijl */
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -122,6 +133,7 @@ nav {
     background-color: #2980b9;
 }
 
+/* Kleinere variant van de knop */
 .btn-small {
     display: inline-block;
     padding: 8px 20px;
@@ -137,6 +149,7 @@ nav {
     background-color: #2980b9;
 }
 
+/* Secties: algemene verticale ruimte en koppen */
 section {
     padding: 80px 0;
 }
@@ -148,6 +161,7 @@ section h2 {
     color: var(--primary-color);
 }
 
+/* Over mij: tekst links, vaardigheden rechts */
 .about-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -173,12 +187,14 @@ section h2 {
     border-bottom: 1px solid #eee;
 }
 
+/* Projectenraster: kaarten passen zich automatisch aan de breedte aan */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
+/* Projectkaart met schaduw en hover-effect */
 .project-card {
     background-color: var(--white);
     border-radius: 10px;
@@ -211,6 +227,7 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+/* Labels/tags bij een project */
 .project-tags {
     list-style: none;
     display: flex;
@@ -227,6 +244,7 @@ section h2 {
     font-size: 0.8rem;
 }
 
+/* Projectvenster (dialog) met backdrop */
 .project-dialog {
     width: min(640px, calc(100% - 40px));
     border: none;
@@ -245,6 +263,7 @@ section h2 {
     padding: 1.5rem;
 }
 
+/* Sluitknop van het projectvenster */
 .project-dialog-close {
     position: absolute;
     top: 0.5rem;
@@ -292,6 +311,7 @@ section h2 {
     align-items: center;
 }
 
+/* Contactformulier */
 #contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -323,6 +343,7 @@ section h2 {
     border-color: var(--accent-color);
 }
 
+/* Footer met donkere achtergrond */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -330,11 +351,13 @@ footer {
     padding: 2rem 0;
 }
 
+/* Responsieve opmaak voor schermen tot 768px (mobiel) */
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
     }
 
+    /* Uitklapbaar mobiel menu */
     .nav-links {
         display: none;
         position: absolute;
@@ -373,6 +396,7 @@ footer {
         margin-bottom: 1rem;
     }
 
+    /* Sluitknop blijft zichtbaar bij scrollen binnen het venster */
     .project-dialog-close {
         position: sticky;
         top: 0;
@@ -388,6 +412,7 @@ footer {
         align-items: stretch;
     }
 
+    /* Knoppen in het venster groter maken voor touch */
     .project-dialog-links .btn,
     .project-dialog-links .btn-small {
         display: flex;

@@ -1,16 +1,20 @@
+// Hamburger-menu: elementen ophalen voor het mobiele navigatiemenu.
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
+// Menu openen/sluiten bij klikken op de hamburger-knop.
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+// Menu automatisch sluiten zodra er op een navigatielink wordt geklikt.
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
     });
 });
 
+// Projectvensters: koppel elke "Lees meer"-knop aan het juiste dialoogvenster.
 document.querySelectorAll('[data-project-dialog]').forEach(trigger => {
     trigger.addEventListener('click', () => {
         const dialog = document.getElementById(trigger.dataset.projectDialog);
@@ -21,6 +25,7 @@ document.querySelectorAll('[data-project-dialog]').forEach(trigger => {
     });
 });
 
+// Sluitknop en klik buiten het venster: dialoogvenster sluiten.
 document.querySelectorAll('.project-dialog').forEach(dialog => {
     dialog.querySelector('.project-dialog-close').addEventListener('click', () => {
         dialog.close();
@@ -33,6 +38,7 @@ document.querySelectorAll('.project-dialog').forEach(dialog => {
     });
 });
 
+// Contactformulier: invoer ophalen en een bevestiging tonen.
 const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', (e) => {
@@ -46,6 +52,7 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 });
 
+// Scroll-animaties: secties fade-in laten verschijnen zodra ze in beeld komen.
 const observerOptions = {
     threshold: 0.1
 };
@@ -59,6 +66,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+// Elke sectie onzichtbaar starten en observeren voor de animatie.
 document.querySelectorAll('section').forEach(section => {
     section.style.opacity = '0';
     section.style.transform = 'translateY(20px)';
